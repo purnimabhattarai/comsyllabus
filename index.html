@@ -546,6 +546,77 @@ void main() {
                     </li>
                 </ul>
                 </p>
+               <p><strong>3. Check if a Number is a Palindrome</strong><br>
+        A palindrome number is a number that reads the same forward and backward (e.g., 121, 1331). This program checks whether an entered number is a palindrome.</p>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int n, rev = 0, digit, num;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    num = n;
+    while (n != 0) {
+        digit = n % 10;
+        rev = rev * 10 + digit;
+        n = n / 10;
+    }
+    if (rev == num)
+        printf("Palindrome");
+    else
+        printf("Not palindrome");
+    return 0;
+}
+        </pre>
+        <div class="output">
+            <img src="output3.png" alt="Palindrome Output">
+        </div>
+
+        <p><strong>4. Generate Fibonacci Series</strong><br>
+        The Fibonacci series is a sequence where each number is the sum of the two preceding ones (0, 1, 1, 2, 3, ...). This program generates the Fibonacci series up to a given number of terms.</p>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int a = 0, b = 1, c, n, i;
+    printf("Enter how many terms you want: ");
+    scanf("%d", &n);
+    printf("%d, %d, ", a, b);
+    for (i = 0; i < n - 2; i++) {
+        c = a + b;
+        printf("%d, ", c);
+        a = b;
+        b = c;
+    }
+    return 0;
+}
+        </pre>
+        <div class="output">
+            <img src="output4.png" alt="Fibonacci Series Output">
+        </div>
+
+        <p><strong>5. Check if a Number is a Perfect Number</strong><br>
+        A perfect number is a number whose sum of proper divisors equals itself (e.g., 6 = 1 + 2 + 3). This program checks if an entered number is perfect.</p>
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int n, i, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    for (i = 1; i < n; i++) {
+        if (n % i == 0) {
+            sum = sum + i;
+        }
+    }
+    if (n == sum) {
+        printf("Number is perfect");
+    } else {
+        printf("Number is not perfect");
+    }
+    return 0;
+}
+        </pre>
+        <div class="output">
+            <img src="output5.png" alt="Perfect Number Output">
+        </div>
             </section>
             
 
