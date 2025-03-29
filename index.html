@@ -434,6 +434,139 @@ void main() {
     getch();
 }
                 </pre>
+
+
+
+
+
+
+
+
+                <p><strong>7. <code>do...while</code> Loop:</strong><br>
+The <code>do...while</code> loop is similar to the <code>while</code> loop, but it ensures that the loop executes at least once before checking the condition.</p>
+
+<p><strong>Syntax:</strong></p>
+<pre>
+do {
+    // Block of statements to be executed
+} while (condition);
+</pre>
+
+<p><strong>Example:</strong> Print numbers from 1 to 5.</p>
+<pre>
+#include <stdio.h>
+void main() {
+    int i = 1;
+    do {
+        printf("%d\n", i);
+        i++;
+    } while (i <= 5);
+    getch();
+}
+</pre>
+
+<p><strong>8. <code>while</code> Loop:</strong><br>
+The <code>while</code> loop executes a block of code as long as a specified condition is true.</p>
+
+<p><strong>Syntax:</strong></p>
+<pre>
+while (condition) {
+    // Block of statements to be executed
+}
+</pre>
+
+<p><strong>Example:</strong> Print numbers from 1 to 5.</p>
+<pre>
+#include <stdio.h>
+void main() {
+    int i = 1;
+    while (i <= 5) {
+        printf("%d\n", i);
+        i++;
+    }
+    getch();
+}
+</pre>
+
+<p><strong>9. <code>for</code> Loop:</strong><br>
+The <code>for</code> loop is used when the number of iterations is known beforehand. It consists of initialization, condition, and increment/decrement.</p>
+
+<p><strong>Syntax:</strong></p>
+<pre>
+for (initialization; condition; increment/decrement) {
+    // Block of statements to be executed
+}
+</pre>
+
+<p><strong>Example:</strong> Print numbers from 1 to 5.</p>
+<pre>
+#include <stdio.h>
+void main() {
+    for (int i = 1; i <= 5; i++) {
+        printf("%d\n", i);
+    }
+    getch();
+}
+</pre>
+
+<p><strong>10. Arrays:</strong><br>
+An array is a collection of similar data types stored in contiguous memory locations. It allows multiple values to be stored using a single variable name.</p>
+
+<p><strong>Advantages of Arrays:</strong></p>
+<ul>
+    <li>Efficient data storage and management.</li>
+    <li>Easy access to elements using an index.</li>
+    <li>Reduces code redundancy and improves readability.</li>
+</ul>
+
+<p><strong>1D (One-Dimensional) Array:</strong><br>
+A one-dimensional array is a simple list of elements accessed using a single index.</p>
+
+<p><strong>Syntax:</strong></p>
+<pre>
+datatype array_name[size];
+</pre>
+
+<p><strong>Example:</strong> Storing and displaying 5 numbers.</p>
+<pre>
+#include <stdio.h>
+void main() {
+    int arr[5] = {10, 20, 30, 40, 50};
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", arr[i]);
+    }
+    getch();
+}
+</pre>
+
+<p><strong>2D (Two-Dimensional) Array:</strong><br>
+A two-dimensional array is an array of arrays, used to store tabular data.</p>
+
+<p><strong>Syntax:</strong></p>
+<pre>
+datatype array_name[rows][columns];
+</pre>
+
+<p><strong>Example:</strong> Storing and displaying a 2x2 matrix.</p>
+<pre>
+#include <stdio.h>
+void main() {
+    int matrix[2][2] = {{1, 2}, {3, 4}};
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+    getch();
+}
+</pre>
+
+
+
+
+
+                
                 
                 <p><strong>7. What are the advantages of Using Arrays?</strong></p>
                 <ul>
